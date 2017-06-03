@@ -6,7 +6,7 @@ int load_from_path(const char* path, char** data, long* data_len) {
   FILE* f = NULL;
 
   /* Open file */
-  f = fopen(path, "r");
+  f = fopen(path, "rb");
   if (!f) {
     return 2;
   }
